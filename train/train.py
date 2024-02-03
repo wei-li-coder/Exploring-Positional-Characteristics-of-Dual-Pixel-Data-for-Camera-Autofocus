@@ -50,7 +50,7 @@ optimizer = optim.Adam(net.parameters(), lr=0.001, betas=(0.5, 0.999))
 lr_scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=75, eta_min=0)
 
 seed = random.randint(1,10000)
-path = "/data/wl/autofocus/codes/iccv23/" #创建的文件的位置
+path = "/data/wl/autofocus/codes/iccv23/"
 file_dir = path + str(seed)
 os.makedirs(file_dir)
 
@@ -62,6 +62,7 @@ for epoch in range(50):
         images, labels = data
         optimizer.zero_grad()
         logits = net(images.to(device))
+        # for 1 step prediction, the coefficient is 1; for 2 step prediction, the coefficient is 0.5
         loss = loss_ordinal_diaz(logits, labels, 1, num_classes)
         loss.backward()
         optimizer.step()
