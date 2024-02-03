@@ -5,7 +5,7 @@ Folder 'preprocess_data' contains codes for preprocessing the public dataset and
 
 Folder 'train' contains codes for training with MobileNet_V2 in this dataset.
 
-The experimental results are shown as follows. (Best results)
+The experimental results (all with MobileNet-v2) are shown as follows. (Best results)
 | | Algorithm | # of input channels | # of steps | =0 | <=1 | <=2 | <=4 |
 | :-: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
 | D1 | ICCV23(lens PE + ROI PE) | 5 | 1 | 0.181 | 0.460 | 0.646 | 0.851 |
