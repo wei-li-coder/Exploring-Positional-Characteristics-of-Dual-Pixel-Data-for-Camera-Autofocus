@@ -1,6 +1,10 @@
 # Exploring-Positional-Characteristics-of-Dual-Pixel-Data-for-Camera-Autofocus
 Replicating the results of paper "Exploring Positional Characteristics of Dual-Pixel Data for Camera Autofocus"
 
+Folder 'preprocess_data' contains codes for preprocessing the public dataset and making my own dataset for train.
+
+Folder 'train' contains codes for training with MobileNet_V2 in this dataset.
+
 The experimental results are shown as follows. (Best results)
 | | Algorithm | # of input channels | # of steps | =0 | <=1 | <=2 | <=4 |
 | :-: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
